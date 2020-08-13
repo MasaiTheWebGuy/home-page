@@ -1,0 +1,65 @@
+.box h1{
+    font-size: 2em;
+}
+.box h3{
+    font-size: 1em;
+}
+
+.box:hover .overlay {
+    opacity: 1;
+  }
+  
+
+.box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    padding: 20px;
+    margin: 30px;
+    border: 1px solid black;
+    transition: .5s ease;
+}
+
+.box:hover{
+    height: 180px;
+}
+
+.overlay{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    top: -50;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    height: 40%;
+    width: 100%;
+    background-color: black;
+}
+
+.overBox{
+    color: white;
+}
+
+ul{
+    display: flex;
+    padding: 0;
+}
+ ul li{
+     font-size: 1em;
+ }
+
+ button{
+     width: 80px;
+     height: 40px;
+ }
+
+@media only screen and (max-width: 600px){
+   
+}

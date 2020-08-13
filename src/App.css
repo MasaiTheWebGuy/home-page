@@ -1,38 +1,189 @@
-.App {
+
+.navi{
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin: 30px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  background: black;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.navi p{
+  font-size: 2em;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/*Other elements*/
+body{
+  padding: 0;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+img{
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.nav-btn{
+
+  
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  display: none;
+}
+
+.nav-btn .top{
+  display: none;
+}
+
+.mobile-top{
+  
+  /*background: red;*/
+  margin: 40px auto;
+}
+
+.mobile-btm{
+  
+  height: 30%;
+}
+
+
+
+
+ul li{
+  list-style-type: none;
+  margin: 10px;
+  font-size: 1.6em;
+
+}
+
+.mobile, .nav-btn{
+  width: 100%;
+  height: 90vh;
+}
+
+.top{
+  padding: 40px 20px;
+  text-align: center;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.job{
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
+
+.help{
+  margin-top: 50px;
+}
+
+.help p{
+  width: 40%;
+  height: 60px;
+  font-size: 1em;
+  text-align: center;
+}
+
+
+
+.grid{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Book a{
+  margin: 20px auto;
+}
+nav{
+  display: none;
+}
+
+@media only screen and (min-width: 768px){
+  .navi{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+.mobile .top{
+    display: none;
+}
+.nav-btn{
+    display: block;
+    background-color: white;
+}
+
+.nav-btn .top{
+    display: block;
+}
+
+
+
+a{
+text-decoration: none;
+text-align: center;
+font-size: 30px;
+width: 120px;
+
+text-align: center;
+padding: 10px;
+color: black;
+}
+
+
+
+
+.logo img{
+
+width: 400px;
+height: 300px;
+}
+
+.name h1{
+font-size: 50px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.job{
+display: flex;
+width: 100%;
+justify-content: center;
+align-content: center;
+}
+
+.job h4{
+margin: 0 10px;
+}
 }

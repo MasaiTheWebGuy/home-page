@@ -13,19 +13,18 @@ export default class Portfolio extends Component {
                     <div className="box">
                         <div className="left">
                             <h1>Generation Gates Girl</h1>
-                            <h3>www.generationgatesgirl.com</h3>
+                            <a href={"https://www.generationgatesgirl.com"}>www.generationgatesgirl.com</a>
                             
                         </div>  
                         
                         <div className="overlay">
                             <div className="overBox">
-                                <h3>Languages used:</h3>
                                 <ul>
                                     <li>Wordpress</li>
                                     <li>CSS</li>
                                 </ul>
-                            </div>"
-                            <button><a href={"https://www.generationgatesgirl.com"}>visit site</a></button>
+                            </div>
+                            <a href={"https://www.generationgatesgirl.com"}><button>visit site</button></a>
                         </div>
                     </div>
 
@@ -38,7 +37,6 @@ export default class Portfolio extends Component {
                         
                         <div className="overlay">
                             <div className="overBox">
-                                <h3>Languages used:</h3>
                                 <ul>
                                     <li>ReactJS</li>
                                     <li>NodeJS</li>
@@ -56,7 +54,6 @@ export default class Portfolio extends Component {
                         
                         <div className="overlay">
                             <div className="overBox">
-                                <h3>Languages used:</h3>
                                 <ul>
                                     <li>ReactJS</li>
                                     <li>Rest API</li>

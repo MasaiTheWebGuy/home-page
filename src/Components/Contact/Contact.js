@@ -14,6 +14,10 @@ export default class Contact extends Component {
             message:''
         }
 
+        this.formSubmit = this.formSubmit.bind(this)
+        this.handleNameChange = this.handleNameChange.bind(this)
+        this.handleEmailChange = this.handleEmailChange.bind(this)
+        this.handleMessageChange = this.handleMessageChange.bind(this)
     }
 
     handleNameChange = (event) => {this.setState({name: event.target.value})
@@ -25,49 +29,21 @@ export default class Contact extends Component {
     handleMessageChange = (event) => {this.setState({ message: event.target.value})
     }
 
-    formSubmit=(e)=>{
+
+
+    async formSubmit(e){
         e.preventDefault();
-       
-       
-        
-        let data = {
-          name:this.state.name,
-          email:this.state.email,
-          message:this.state.message
-        }
-      
-      
-      
-        
-        axios.post('/api/form',data)
-        .then(res=>{
-          this.setState({
-            sent:true,
-          },this.resetForm())
-        })
-        .catch(()=>{
-          console.log('message not send');
-          
-        })
-        
-       
-       }
-    
-    resetForm=()=>{
-        this.setState({
-            name:'',
-            message:'',
-            email:''
-        })
 
-        setTimeout(()=>{
-            this.setState({
-            sent:false,
-            
-            
+       
 
-            })
-        },3000)
+        const { name, email, message } = this.state
+      
+        axios.post("http://localhost:3003/contact", {
+            name,
+            email,
+            message
+          });
+       
     }
 
     render() {

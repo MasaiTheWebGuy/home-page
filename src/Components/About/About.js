@@ -9,11 +9,11 @@ export default class About extends Component {
 
                 <div id="top">
                     <div id="Img">
-                        <img src="IMG_2939.jpg" alt="Me" />
+                        <img src="/Images/20200326_140746.jpg" alt="Me" />
                     </div>
                     <div id="Bio">
-                        <h3>Welcome</h3>
-                        <p>Hey there! My name is Tyrone and I am a Web Developer and Photographer based out of
+                        <h3>Hello World!</h3>
+                        <p> My name is Tyrone and I am a Web Developer and Photographer based out of
                             Charlotte, NC. I am extremely passionate about helping people achieve their goals. Be it that
                             they are looking to get their next start-up business off the ground or 
                             aid in launching the next big artist through their preferred platform. <br />
@@ -26,10 +26,9 @@ export default class About extends Component {
                     </div>
                 </div>
                 <footer>
-                    <i className="fab fa-github"></i>
-                    <i className="fab fa-instagram"></i>
-                    <i className="fab fa-facebook"></i>
-                    <i className="far fa-envelope"></i>
+                    <a href={"https://github.com/MasaiTheWebGuy/"}><i className="fab fa-github"></i></a>
+                    <a href={"https://instagram.com/masaithewebguy"}><i className="fab fa-instagram"></i></a>
+                    <a href={"mailto: tyrcombs@gmail.com"}><i className="far fa-envelope"></i></a>
                 </footer> 
                 <NavButton className="navi" onButtonClick={this.onButtonClick} />   
             </div>

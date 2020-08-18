@@ -41,23 +41,27 @@ main{
     padding: 10px;
 }
 
-.login{
-    width: 100%;
-    text-align: center;
+#login{
     display: flex;
     align-content: center;
     justify-content: center;
+    width: 80%;
     
 }
 
 .form{
+    width: 100%;
     padding: 40px;
     box-shadow: 2px 0px 41px -11px rgba(0,0,0,0.72);
 }
 
 
 .main{
-    padding: 40px
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #message{
@@ -110,7 +114,15 @@ footer i{
 
 
 @media screen and (max-width: 400px) {
+    .main{
+        padding: 10px 0;
+    }
+
+    #login{
+        width: 60%;
+    }
+
     .form{
-        width: 100%;
+        width: 100%
     }
 }

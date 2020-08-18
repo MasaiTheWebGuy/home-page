@@ -5,6 +5,10 @@
     font-size: 1em;
 }
 
+
+.overBox h3{
+    font-size: 20px;
+}
 .box:hover .overlay {
     opacity: 1;
   }
@@ -29,7 +33,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
     align-items: center;
     position: absolute;
     top: -50;
@@ -52,14 +55,15 @@ ul{
     padding: 0;
 }
  ul li{
-     font-size: 1em;
+     font-size: 20px;
  }
 
  button{
-     width: 80px;
+    
      height: 40px;
  }
 
-@media only screen and (max-width: 600px){
-   
-}
+ a{
+     font-size: 20px;
+     padding: 0;
+ }

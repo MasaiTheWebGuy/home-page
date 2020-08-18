@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     margin: 40px 20px 20px;
+    flex-direction: row;
 }
 
 #Img{
@@ -40,10 +41,12 @@ footer{
       text-align: center;
   }
 
-  footer i{
+footer i{
       padding: 0 10px;
       width: 30px;
       font-size: 50px;
+      margin: 20px;
+      cursor: pointer;
   }
 
 @media only screen and (max-width: 600px){
